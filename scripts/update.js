@@ -29,7 +29,7 @@ async function renderImage() {
     const { public, private } = parseArgs();
     const ct = await fetchCurrentTime();
     const { temperature, windSpeed } = await fetchWeather();
-    const totalStars = await fetchGitHubStars('berrylemons');
+    const totalStars = await fetchGitHubStars('bytegrip');
 
     const newImageName = 'toshow' + ct.now.getMilliseconds() + '.png';
     const tempImagePath = path.join(__dirname, 'display', 'temp-' + newImageName);
@@ -124,8 +124,8 @@ async function renderImage() {
     ctx.strokeText(`Chisinau`, canvas.width - flagSize - 510, canvas.height - 130);
 
     ctx.font = '60px NiveaFont';
-    ctx.fillText('Made by @berrylemons', canvas.width - 780, canvas.height - 50);
-    ctx.strokeText(`Made by @berrylemons`, canvas.width - 780, canvas.height - 50);
+    ctx.fillText('Made by @bytegrip', canvas.width - 780, canvas.height - 50);
+    ctx.strokeText(`Made by @bytegrip`, canvas.width - 780, canvas.height - 50);
 
     cleanDisplayFolder();
 
@@ -163,7 +163,7 @@ async function renderImage() {
         let readmeContent = fs.readFileSync('README.md', 'utf-8');
 
         let regex = /!\[Dashboard\]\((.*?)\)/;
-        readmeContent = readmeContent.replace(regex, `![Dashboard](https://github.com/berrylemons/berrylemons/blob/main/scripts/display/${newImageName})`);
+        readmeContent = readmeContent.replace(regex, `![Dashboard](https://github.com/bytegrip/bytegrip/blob/main/scripts/display/${newImageName})`);
 
         fs.writeFileSync('README.md', readmeContent, 'utf-8');
         console.log('README.md updated successfully.');
