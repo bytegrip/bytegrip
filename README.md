@@ -1,4 +1,4 @@
-![Dashboard](https://github.com/bytegrip/bytegrip/blob/main/scripts/display/toshow584.png)
+![Dashboard](https://github.com/bytegrip/bytegrip/blob/main/scripts/display/toshow593.png)
 
 <h1 align="center">Welcome to my Developer Hub</h1>
 
