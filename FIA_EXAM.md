@@ -1,5 +1,4 @@
 # Core AI/ML Technology Explanations
-*Reference this section when you encounter technical terms in the problems below*
 
 ## Neural Networks & Deep Learning
 
@@ -1411,4 +1410,5 @@
    - **How it works:** Extract feature columns from handwriting image, LSTM processes sequence, CTC loss handles alignment between image and text, no explicit segmentation needed
    - **Implementation:** Preprocess exam line images, extract visual features per column, train LSTM with CTC loss on IAM dataset, decode output sequence, apply to exam lines
    - **Advantages:** No character segmentation needed, state-of-the-art accuracy for handwriting (90-95%), handles connected writing, end-to-end
+
    - **Disadvantages:** Complex to implement, requires large sequence-labeled data, needs GPU, sensitive to line segmentation, training intensive
